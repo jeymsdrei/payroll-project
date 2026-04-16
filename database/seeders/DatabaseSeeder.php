@@ -27,6 +27,8 @@ class DatabaseSeeder extends Seeder
             'hourly_rate' => 0,
             'overtime_rate' => 0,
             'tax_rate' => 0.15,
+            // Set known password
+            'password' => bcrypt('password123'),
         ]);
 
         $employee = User::factory()->create([
